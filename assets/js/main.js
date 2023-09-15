@@ -537,12 +537,12 @@ function showTime(){
   /* Check if its week or weekend */
   if (d != 0 && d != 6) {
     /* Change status depending on the time */
-    if ((h == 0 || h == 24) || h < 08) {
+    if ((h == 0 || h == 24) || h < 8) {
       statusColor = "#FF0000";
       statusText = "i am currently sleeping";
     }
 
-    else if (h >= 08 && h < 14) {
+    else if (h >= 8 && h < 14) {
       statusColor = "#008000";
       statusText = "Available now";
     }
@@ -558,7 +558,7 @@ function showTime(){
     }
   } else {
       /* Change status depending on the time */
-      if ((h == 0 || h == 24) || h < 08) {
+      if ((h == 0 || h == 24) || h < 8) {
         statusColor = "#0373fc";
         statusText = "I am currently sleeping";
       }
@@ -608,7 +608,7 @@ copyright();
 
 /* ==================== TIPYNG TITLE ANIMATION ==================== */
 window.ityped.init(document.querySelector('.ityped'),{
-  strings: ['App Dev','Software Engineer','Web Dev'],
+  strings: ['IOS Dev','Application Dev','Android Dev'],
   loop: true,
   typeSpeed:  150,
   backDelay: 3000,
